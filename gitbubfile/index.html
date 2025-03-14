@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github File</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>GitHub仓库文件链接转换</h1>
+      <div class="input-group">
+        <label for="inputUrl">请输入链接：</label>
+        <input
+          type="text"
+          id="inputUrl"
+          placeholder="例如: GitHub仓库文件链接或直链"
+        />
+        <button onclick="convertLinks()">转换链接</button>
+      </div>
+      <div id="result" class="result">
+        <h3>转换结果：</h3>
+        <p id="githubLink"></p>
+        <p id="rawLink"></p>
+        <p id="jsdelivrLink"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

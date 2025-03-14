@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PNG/JPG to WebP</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>PNG/JPG to WebP</h1>
+    </div>
+    <div class="main">
+      <div class="img" id="webpContainer">
+        <!-- WebP 图片将在这里显示 -->
+      </div>
+      <div class="aside">
+        <input
+          type="file"
+          id="fileInput"
+          accept="image/png, image/jpeg"
+          class="file-input"
+        />
+        <button onclick="triggerFileInput()" class="btn">选择图片</button>
+        <div id="fileName" class="image-info" style="display: none">
+          <p><strong>文件名称：</strong></p>
+        </div>
+        <div id="imageInfo" class="image-info" style="display: none">
+          <p><strong>图片尺寸：</strong></p>
+          <p>宽度:</p>
+          <p>高度:</p>
+        </div>
+        <button
+          id="downloadBtn"
+          onclick="downloadWebP()"
+          class="btn"
+          style="display: none"
+        >
+          下载 WebP 图片
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
